@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Informationen zur OAuth-Anwendung rclone Backup.">
+  <title>rclone Backup – Honaro Software</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>rclone Backup</h1>
+      <p>Informationen zur privaten OAuth-Anwendung für Google Drive.</p>
+      <nav>
+        <a href="/">Startseite</a>
+        <a href="/privacy/">Datenschutzerklärung</a>
+      </nav>
+    </header>
+
+    <section class="card">
+      <h2>Zweck der Anwendung</h2>
+      <p>
+        <strong>rclone Backup</strong> ist eine private Anwendung zur automatisierten Sicherung
+        eigener Dateien von Linux-Systemen in ein eigenes Google-Drive-Konto.
+      </p>
+      <p>
+        Die Anwendung verwendet <strong>rclone</strong> als Verbindung zu Google Drive und
+        <strong>restic</strong> für verschlüsselte, versionierte Backups.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Zugriff auf Google Drive</h2>
+      <p>
+        Der Google-Drive-Zugriff wird ausschließlich verwendet, um Backup-Daten im vom Nutzer
+        autorisierten Google-Drive-Konto zu erstellen, zu lesen, zu aktualisieren und zu löschen,
+        soweit dies für die Sicherung und Wiederherstellung erforderlich ist.
+      </p>
+      <p>
+        Die Anwendung ist nicht als öffentlicher Dienst vorgesehen und verarbeitet keine Daten
+        anderer Nutzer auf einem Honaro-Software-Server.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Datenverarbeitung</h2>
+      <p>
+        Die OAuth-Zugangsdaten werden lokal auf dem Gerät gespeichert, auf dem rclone eingerichtet
+        wurde. Die Sicherungsdaten werden von restic verschlüsselt, bevor sie in Google Drive
+        gespeichert werden.
+      </p>
+      <p>
+        Weitere Informationen befinden sich in der
+        <a href="/privacy/">Datenschutzerklärung</a>.
+      </p>
+    </section>
+
+    <footer>
+      <p><a href="/">Honaro Software</a></p>
+    </footer>
+  </main>
+</body>
+</html>
